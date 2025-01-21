@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="forecastify.ico" rel="icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forecastify!</title>
+  </head>
+  <body>
+    <div class="top-part">
+      <div class="hero">
+        <div class="logo">
+          <p>FORECASTIFY</p>
+        </div>
+        <div class="search-bar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            width="24px"
+            height="24px"
+            class="search-bar-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+          <input
+            class="search-bar-input input-location"
+            type="text"
+            name="location"
+            placeholder="Enter your location here"
+          />
+        </div>
+        <div class="menu">
+          <a href="#what-it-does" class="menu-btn scroll-to-link"
+            >What the app does</a
+          >
+          <a href="#try-it-here" class="menu-btn scroll-to-link"
+            >Try it here!</a
+          >
+        </div>
+        <section class="section-hero">
+          <h1 class="primary-heading">
+            Welcome to Forecastify!—where we don't control the weather, but we
+            do love to complain about it!
+          </h1>
+          <p class="desc">
+            Serving fresh weather predictions—because looking out the window is
+            too mainstream.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <section class="section-main-body">
+      <h2 class="secondary-heading" id="what-it-does">What the app does</h2>
+      <p class="what-text">
+        Forecastify&trade; is your ultimate weather companion, delivering
+        real-time forecasts, hyperlocal updates, and quirky insights to help you
+        plan your day—whether its sunny skies, sudden downpours, or anything in
+        between.
+      </p>
+      <h2 class="secondary-heading" id="try-it-here">Try it for yourself!</h2>
+      <div class="temp-info" id="result-area">
+        <p class="location-city">Location</p>
+        <p class="location-country">Country</p>
+        <p class="location-temp">Temperature</p>
+        <p class="location-windspeed">Windspeed</p>
+        <p class="location-humidity">Humidity</p>
+        <p class="location-desc">Description</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#c9ade6"
+          class="wind-icon"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M184,184a32,32,0,0,1-32,32c-13.7,0-26.95-8.93-31.5-21.22a8,8,0,0,1,15-5.56C137.74,195.27,145,200,152,200a16,16,0,0,0,0-32H40a8,8,0,0,1,0-16H152A32,32,0,0,1,184,184Zm-64-80a32,32,0,0,0,0-64c-13.7,0-26.95,8.93-31.5,21.22a8,8,0,0,0,15,5.56C105.74,60.73,113,56,120,56a16,16,0,0,1,0,32H24a8,8,0,0,0,0,16Zm88-32c-13.7,0-26.95,8.93-31.5,21.22a8,8,0,0,0,15,5.56C193.74,92.73,201,88,208,88a16,16,0,0,1,0,32H32a8,8,0,0,0,0,16H208a32,32,0,0,0,0-64Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#c9ade6"
+          class="humidity-icon"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM128,216a72.08,72.08,0,0,1-72-72c0-57.23,55.47-105,72-118,16.53,13,72,60.75,72,118A72.08,72.08,0,0,1,128,216Zm55.89-62.66a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
