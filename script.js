@@ -25,14 +25,6 @@ document.addEventListener("keydown", function (e) {
         return response.json();
       })
       .then((data) => {
-        // Display data in the console
-        console.log("Weather Data:", data);
-        console.log(
-          `Location: ${data.location.name}, ${data.location.country}`
-        );
-        console.log(`Temperature: ${data.current.temp_c}°C`);
-        console.log(`Condition: ${data.current.condition.text}`);
-
         locationCity.textContent = data.location.name;
         locationCountry.textContent = data.location.country;
         locationTemp.textContent =
